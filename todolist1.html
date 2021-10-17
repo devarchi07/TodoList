@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist1.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <div><h1 style="text-align: center;">TODO LIST</h1></div>
+    <div style="text-align: center;">
+        <span >THESE TODO LIST IS FOR  </span><span id="time"></span>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    </div>
+    <div style="text-align: center;">
+    <div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    <label for="task">TASK NAME</label><br>
+    <input type="text" id="task" name="task" placeholder="enter the task"><br>
+    </div>
+    <div>
+    <label for="desc">DESCRIPTION</label><br>
+    <textarea placeholder="enter the description" id="desc" name="desc"></textarea><br>
+    </div>
+    <div>
+    <input type="submit" id="sub" name="sub" value="ADD TASK" >
+    <!-- <input type="submit" id="sub" name="sub" value="CLEAR ALL TASK" onclick="clear_list()"> -->
+    </div>
+</div>
+<div style="text-align: center;">
+    <table>
+        <thead>
+            <tr>
+            <th>SL NO.</th>
+            <th>TASK NAME</th>
+            <th>DESCRIPTION</th>
+            <th>ACTION</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>1</td>
+                <td>DRINK WATER</td>
+                <td>WE SHOULD DRINK WATER</td>
+                <td><button>DELETE</button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+<script src="todolist1.js"></script>
+</body>
+</html>
